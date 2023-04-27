@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cambridge Digital Collections Platform Core ODD</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Cambridge Digital Collections Platform</publisher>
+                <availability status="free">
+                    <p>TEI material can be licensed differently depending on the use you intend to make of it. Hence it is made available under both the CC+BY and BSD-2 licences. The CC+BY licence is generally appropriate for usages which treat TEI content as data or documentation. The BSD-2 licence is generally appropriate for usage of TEI content in a software environment. For further information or clarification, please contact the TEI Consortium (info@tei-c.org).</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <title>Cambridge Digital Collections Platform Core ODD</title>
+                    <author>CDCP</author>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <head>Cambridge Digital Collections Platform</head>
+            <schemaSpec ident="cdcp_main" start="TEI teiCorpus" prefix="tei_" targetLang="en" docLang="en" defaultExceptions="http://www.tei-c.org/ns/1.0 http://www.w3.org/1998/Math/MathML teix:egXML">
+                <moduleRef url="https://www.tei-c.org/release/xml/tei/Exemplars/mathml2-main.rng"/>
+                <moduleRef n="01" key="tei"/>
+                <moduleRef n="02" key="header"/>
+                <moduleRef n="03" key="core"/>
+                <moduleRef n="04" key="textstructure"/>
+                <moduleRef n="05" key="gaiji"/>
+                <moduleRef n="10" key="msdescription"/>
+                <moduleRef n="11" key="transcr"/>
+                <moduleRef n="12" key="textcrit"/>
+                <moduleRef n="13" key="namesdates"/>
+                <moduleRef n="14" key="figures"/>
+                <moduleRef n="16" key="linking"/>
+                <moduleRef n="17" key="analysis"/>
+                <moduleRef n="22" key="tagdocs"/>
+                
+                <elementSpec module="figures" ident="formula" mode="change">
+                    <classes mode="change">
+                        <memberOf key="att.global" mode="delete"/>
+                    </classes>
+                    <content>
+                        <rng:choice>
+                            <rng:ref name="mathml.math"/>
+                            <rng:text/>
+                        </rng:choice>
+                    </content>
+                </elementSpec>
+            </schemaSpec>
+        </body>
+    </text>
+</TEI>
