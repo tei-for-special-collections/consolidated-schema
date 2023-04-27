@@ -3,7 +3,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Cambridge Digital Collections Platform Core ODD</title>
+                <title>Core ODD for the Cambridge Digital Collections Platform</title>
             </titleStmt>
             <publicationStmt>
                 <publisher>Cambridge Digital Collections Platform</publisher>
@@ -13,7 +13,7 @@
             </publicationStmt>
             <sourceDesc>
                 <bibl>
-                    <title>Cambridge Digital Collections Platform Core ODD</title>
+                    <title>Core ODD for the Cambridge Digital Collections Platform</title>
                     <author>CDCP</author>
                 </bibl>
             </sourceDesc>
