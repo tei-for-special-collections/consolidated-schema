@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2023-05-15T15:16:58Z. .
+Schema generated from ODD source 2023-07-20T13:53:17Z. .
 TEI Edition: Version 4.7.0a. Last updated on
         11th April 2023, revision bec660a72
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.7.0a./
@@ -3828,7 +3828,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.7.0a./
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e130987-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e130995-constraint">
          <rule context="tei:content">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/compatibility/annotations/1.0', 'http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">content descendants must be in the
               namespaces
@@ -3879,7 +3879,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.7.0a./
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e132371-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e132379-constraint">
          <rule context="tei:datatype">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">datatype descendants must be in the
               namespaces
@@ -17341,7 +17341,8 @@ Suggested values include: 1] binding; 2] folia; 3] leaf; 4] line-height; 5] rule
             <choice>
                <text/>
                <ref name="tei_model.gLike"/>
-               <ref name="tei_model.hiLike"/>
+               <ref name="tei_hi"/>
+               <ref name="tei_locus"/>
             </choice>
          </zeroOrMore>
          <ref name="tei_att.global.attributes"/>
