@@ -4426,16 +4426,7 @@
                             </attDef>
                         </attList>
                     </elementSpec>
-                    <!-- Non-TEI-conformant change (as per P5 3.1.0) adding 'hi' to locus -->
-                    <elementSpec ident="locus" module="msdescription" mode="change">
-                        <content>
-                            <alternate minOccurs="0" maxOccurs="unbounded">
-                                <textNode/>
-                                <classRef key="model.gLike"/>
-                                <classRef key="model.hiLike"/>
-                            </alternate>
-                        </content>
-                    </elementSpec>
+                    
                     <!-- Include XInclude into our schema -->
                     <elementSpec ident="include" ns="http://www.w3.org/2001/XInclude" mode="add">
                         <desc xml:lang="en" versionDate="2014-01-12">The W3C XInclude element</desc>
