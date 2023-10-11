@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2023-10-11T14:28:12Z. . 
+Schema generated from ODD source 2023-10-11T14:58:38Z. . 
 TEI Edition: P5 Version 4.7.0a. Last updated on 16th July 2023, revision df882688d 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.7.0a/ 
   
@@ -3827,7 +3827,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.7.0a/
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e131048-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e131080-constraint">
          <rule context="tei:content">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/compatibility/annotations/1.0', 'http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">content descendants must be in the
               namespaces
@@ -3878,7 +3878,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.7.0a/
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e132432-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e132464-constraint">
          <rule context="tei:datatype">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">datatype descendants must be in the
               namespaces
@@ -17849,7 +17849,21 @@ Sample values include: 1] binding; 2] endband; 3] slipcase; 4] support; 5] tie</
       <element name="watermark">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(watermark) contains a word or phrase describing a watermark or similar device. [10.3.3. Watermarks and Stamps]</a:documentation>
          <ref name="tei_macro.phraseSeq"/>
+         <ref name="tei_att.typed.attribute.subtype"/>
          <ref name="tei_att.global.attributes"/>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.
+Suggested values include: 1] countermark</a:documentation>
+               <choice>
+                  <value>countermark</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The watermark is a countermark.</a:documentation>
+                  <data type="token">
+                     <param name="pattern">[^\p{C}\p{Z}]+</param>
+                  </data>
+               </choice>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
