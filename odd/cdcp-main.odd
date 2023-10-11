@@ -5025,6 +5025,22 @@
                     <!-- TODO?: the initial title in titleStmt should match the shelfmark -->
 
 
+                    <elementSpec ident="locus" module="msdescription" mode="change">
+                        <attList>
+                            <attDef ident="from" mode="change">
+                                <!-- NB: This is a TEI-breaking change -->
+                                <datatype>
+                                    <dataRef key="teidata.text"/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="to" mode="change">
+                                <!-- NB: This is a TEI-breaking change -->
+                                <datatype>
+                                    <dataRef key="teidata.text"/>
+                                </datatype>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
                 </schemaSpec>
             </div>
         </body>
