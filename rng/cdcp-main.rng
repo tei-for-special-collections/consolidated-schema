@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2023-10-11T13:36:52Z. . 
+Schema generated from ODD source 2023-10-11T14:02:30Z. . 
 TEI Edition: P5 Version 4.7.0a. Last updated on 16th July 2023, revision df882688d 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.7.0a/ 
   
@@ -10841,10 +10841,7 @@ Elements]</a:documentation>
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="//tei:msItem//tei:author[ancestor::tei:fileDesc[descendant::tei:idno[@type='catalogue']='Western']]">
-               <sch:assert test="@key[matches(., 'person_\d+')]">In the
-                                        medieval catalogue, the author element, when a child of
-                                        msItem, must have a key matching the pattern
-                                        'person_\d+'.</sch:assert>
+               <sch:assert test="@key" role="warn">We recommend using the key attribute to provide a persistent identifier for the author.</sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_att.global.attributes"/>
@@ -20669,9 +20666,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="//tei:msDesc//tei:orgName[ancestor::tei:fileDesc[descendant::tei:idno[@type='catalogue']='Western']]">
-               <sch:assert test="@key[matches(., 'org_\d+')]">In the medieval
-                                        catalogue, the orgName element, when a descendant of msDesc,
-                                        must have a key matching the pattern 'org_\d+'.</sch:assert>
+               <sch:assert test="@key" role="warn">We recommend using the key attribute to provide a persistent identifier for the orgName.</sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_att.global.attributes"/>
@@ -20693,10 +20688,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="//tei:msDesc//tei:persName[ancestor::tei:fileDesc[descendant::tei:idno[@type='catalogue']='Western']]">
-               <sch:assert test="@key[matches(., 'person_\d+')]">In the
-                                        medieval catalogue, the persName element, when a descendant
-                                        of msDesc, must have a key matching the pattern
-                                        'person_\d+'.</sch:assert>
+               <sch:assert test="@key" role="warn">We recommend using the key attribute to provide a persistent identifier for the persName.</sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_att.global.attributes"/>
@@ -20777,10 +20769,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="//tei:msDesc//tei:placeName[ancestor::tei:fileDesc[descendant::tei:idno[@type='catalogue']='Western']]">
-               <sch:assert test="@key[matches(., 'place_\d+')]">In the medieval
-                                        catalogue, the placeName element, when a descendant of
-                                        msDesc, must have a key matching the pattern
-                                        'place_\d+'.</sch:assert>
+               <sch:assert test="@key" role="warn">We recommend using the key attribute to provide a persistent identifier for the placeName.</sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_att.datable.attributes"/>
@@ -20813,10 +20802,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="//tei:origin//tei:country[ancestor::tei:fileDesc[descendant::tei:idno[@type='catalogue']='Western']]">
-               <sch:assert test="@key[matches(., 'place_\d+')]">In the medieval
-                                        catalogue, the country element, when a descendant of origin,
-                                        must have a key matching the pattern
-                                        'place_\d+'.</sch:assert>
+               <sch:assert test="@key" role="warn">We recommend using the key attribute to provide a persistent identifier for the country.</sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_att.global.attributes"/>
@@ -20848,10 +20834,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
                       context="//tei:origin//tei:settlement[ancestor::tei:fileDesc[descendant::tei:idno[@type='catalogue']='Western']]">
-               <sch:assert test="@key[matches(., 'place_\d+')]">In the medieval
-                                        catalogue, the settlement element, when a descendant of
-                                        origin, must have a key matching the pattern
-                                        'place_\d+'.</sch:assert>
+               <sch:assert test="@key" role="warn">We recommend using the key attribute to provide a persistent identifier for the settlement.</sch:assert>
             </sch:rule>
          </pattern>
          <ref name="tei_att.global.attributes"/>
