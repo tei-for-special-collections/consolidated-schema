@@ -3448,6 +3448,12 @@
                                 either as prose tagged with <gi>p</gi> elements, or as a series of
                                 custodial events, using the <gi>custEvent</gi> element with
                                 attributes <att>type</att>, <att>when</att>, etc.</p>
+                            <div>
+                                <head>Custodial Events</head>
+                                <p>The <gi>custEvent</gi> element can be used to describe discrete
+                                    events during the custodial history of an item.</p>
+                                <!-- Further details and examples needed -->
+                            </div>
                         </div>
                         <!--<div xml:id="additional_note">
                             <head>Note</head>
@@ -5033,6 +5039,11 @@
                     </elementSpec>
 
                     <!-- TODO?: the initial title in titleStmt should match the shelfmark -->
+
+
+                    <elementSpec ident="custEvent" module="msdescription" mode="change">
+                        <!-- -->
+                    </elementSpec>
 
 
                     <elementSpec ident="locus" module="msdescription" mode="change">
