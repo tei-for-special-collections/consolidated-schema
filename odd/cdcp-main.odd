@@ -3940,6 +3940,7 @@
                     <moduleRef n="06" key="verse"/><!-- Unused by CUDL-->
                     <moduleRef n="07" key="drama"/><!-- Unused by CUDL-->
                     <moduleRef n="08" key="spoken"/><!-- Unused by CUDL-->
+                    <moduleRef n="17" key="analysis"/>
                     <moduleRef n="09" key="dictionaries"/><!-- Unused by CUDL-->
                     <moduleRef n="10" key="msdescription"/>
                     <moduleRef n="11" key="transcr"/>
@@ -3948,7 +3949,6 @@
                     <moduleRef n="14" key="figures"/>
                     <moduleRef n="15" key="corpus"/><!-- Unused by CUDL-->
                     <moduleRef n="16" key="linking"/>
-                    <moduleRef n="17" key="analysis"/>
                     <moduleRef n="18" key="iso-fs"/><!-- Unused by CUDL-->
                     <moduleRef n="19" key="nets"/><!-- Unused by CUDL-->
                     <moduleRef n="21" key="certainty"/><!-- Unused by CUDL-->
