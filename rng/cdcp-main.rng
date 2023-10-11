@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2023-10-11T14:58:38Z. . 
+Schema generated from ODD source 2023-10-11T15:38:14Z. . 
 TEI Edition: P5 Version 4.7.0a. Last updated on 16th July 2023, revision df882688d 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.7.0a/ 
   
@@ -3827,7 +3827,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.7.0a/
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e131080-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e131090-constraint">
          <rule context="tei:content">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/compatibility/annotations/1.0', 'http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">content descendants must be in the
               namespaces
@@ -3878,7 +3878,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.7.0a/
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e132464-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e132474-constraint">
          <rule context="tei:datatype">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">datatype descendants must be in the
               namespaces
