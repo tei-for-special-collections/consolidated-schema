@@ -4736,7 +4736,6 @@
                     <!-- ********************** -->
 
 
-                    <!-- The TEI element must have xml:id in the form "manuscript_1234" (except in Genizah where it must be "volume_5678") -->
                     <elementSpec ident="TEI" module="textstructure" mode="change">
                         <!-- -->
                     </elementSpec>
