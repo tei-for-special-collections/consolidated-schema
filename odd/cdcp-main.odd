@@ -4746,10 +4746,7 @@
                             <constraint>
                                 <sch:rule
                                     context="//tei:msItem//tei:author[ancestor::tei:fileDesc[descendant::tei:idno[@type='catalogue']='Western']]">
-                                    <sch:assert test="@key[matches(., 'person_\d+')]">In the
-                                        medieval catalogue, the author element, when a child of
-                                        msItem, must have a key matching the pattern
-                                        'person_\d+'.</sch:assert>
+                                    <sch:assert test="@key" role="warn">We recommend using the key attribute to provide a persistent identifier for the author.</sch:assert>
                                 </sch:rule>
                             </constraint>
                         </constraintSpec>
@@ -4761,10 +4758,7 @@
                             <constraint>
                                 <sch:rule
                                     context="//tei:msDesc//tei:persName[ancestor::tei:fileDesc[descendant::tei:idno[@type='catalogue']='Western']]">
-                                    <sch:assert test="@key[matches(., 'person_\d+')]">In the
-                                        medieval catalogue, the persName element, when a descendant
-                                        of msDesc, must have a key matching the pattern
-                                        'person_\d+'.</sch:assert>
+                                    <sch:assert test="@key" role="warn">We recommend using the key attribute to provide a persistent identifier for the persName.</sch:assert>
                                 </sch:rule>
                             </constraint>
                         </constraintSpec>
@@ -4776,10 +4770,7 @@
                             <constraint>
                                 <sch:rule
                                     context="//tei:msDesc//tei:placeName[ancestor::tei:fileDesc[descendant::tei:idno[@type='catalogue']='Western']]">
-                                    <sch:assert test="@key[matches(., 'place_\d+')]">In the medieval
-                                        catalogue, the placeName element, when a descendant of
-                                        msDesc, must have a key matching the pattern
-                                        'place_\d+'.</sch:assert>
+                                    <sch:assert test="@key" role="warn">We recommend using the key attribute to provide a persistent identifier for the placeName.</sch:assert>
                                 </sch:rule>
                             </constraint>
                         </constraintSpec>
@@ -4791,9 +4782,7 @@
                             <constraint>
                                 <sch:rule
                                     context="//tei:msDesc//tei:orgName[ancestor::tei:fileDesc[descendant::tei:idno[@type='catalogue']='Western']]">
-                                    <sch:assert test="@key[matches(., 'org_\d+')]">In the medieval
-                                        catalogue, the orgName element, when a descendant of msDesc,
-                                        must have a key matching the pattern 'org_\d+'.</sch:assert>
+                                    <sch:assert test="@key" role="warn">We recommend using the key attribute to provide a persistent identifier for the orgName.</sch:assert>
                                 </sch:rule>
                             </constraint>
                         </constraintSpec>
@@ -4807,10 +4796,7 @@
                             <constraint>
                                 <sch:rule
                                     context="//tei:origin//tei:country[ancestor::tei:fileDesc[descendant::tei:idno[@type='catalogue']='Western']]">
-                                    <sch:assert test="@key[matches(., 'place_\d+')]">In the medieval
-                                        catalogue, the country element, when a descendant of origin,
-                                        must have a key matching the pattern
-                                        'place_\d+'.</sch:assert>
+                                    <sch:assert test="@key" role="warn">We recommend using the key attribute to provide a persistent identifier for the country.</sch:assert>
                                 </sch:rule>
                             </constraint>
                         </constraintSpec>
@@ -4822,10 +4808,7 @@
                             <constraint>
                                 <sch:rule
                                     context="//tei:origin//tei:settlement[ancestor::tei:fileDesc[descendant::tei:idno[@type='catalogue']='Western']]">
-                                    <sch:assert test="@key[matches(., 'place_\d+')]">In the medieval
-                                        catalogue, the settlement element, when a descendant of
-                                        origin, must have a key matching the pattern
-                                        'place_\d+'.</sch:assert>
+                                    <sch:assert test="@key" role="warn">We recommend using the key attribute to provide a persistent identifier for the settlement.</sch:assert>
                                 </sch:rule>
                             </constraint>
                         </constraintSpec>
