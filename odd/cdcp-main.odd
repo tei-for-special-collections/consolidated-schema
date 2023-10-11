@@ -1919,10 +1919,14 @@
                                                 format specified above at Repertories. References to
                                                 online repertories may be given using the
                                                   <gi>ref</gi> element.</p>
-                                            <p>Countermarks should be described using the
-                                                  <gi>countermark</gi> element. Note that this
+                                            <p>Countermarks should be described using a
+                                                  <gi>watermark</gi> element with a <att>type</att> 
+                                                attribute equal to <val>countermark</val>. Note that this
                                                 customization is not currently part of the TEI P5
                                                 standard.</p>
+                                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                                <watermark type="countermark">lorem ipse dolor</watermark>
+                                            </egXML>
 
                                             <!-- todo: references to online repertories -->
                                             <!-- todo: useful to have a new attribute for a watermark to record whether / how closely it has been matched in a repertory? -->
@@ -4574,26 +4578,32 @@
                         </attList>
                     </elementSpec>
 
-                    <!-- add a new element 'countermark'. Model should be same as for 'watermark'  -->
-                    <elementSpec ident="countermark" mode="add"
-                        ns="https://github.com/msdesc/consolidated-tei-schema">
-                        <desc>Contains a description of a countermark. Note: This is a customization
-                            which is not currently part of the TEI P5 standard.</desc>
-                        <classes>
-                            <memberOf key="model.pPart.msDesc"/>
-                            <memberOf key="att.global"/>
-                            <memberOf key="att.global.rendition"/>
-                            <memberOf key="att.global.linking"/>
-                            <memberOf key="att.global.analytic"/>
-                            <memberOf key="att.global.change"/>
-                            <memberOf key="att.global.responsibility"/>
-                            <memberOf key="att.global.source"/>
+
+                    <elementSpec ident="watermark" module="msdescription" mode="change">
+                        <classes mode="change">
+                            <memberOf key="att.typed"/>
                         </classes>
-                        <content>
-                            <macroRef key="macro.phraseSeq"/>
-                        </content>
                     </elementSpec>
 
+                    <!-- A second elementSpec for watermark is necessary.
+                         The first one changed the data model and added in the attributes
+                         contained in att.type (type, subtype).
+                         It's not possible for us to constrain the values of those attributes
+                         in the first elementSpec due to how the ODD is processed when
+                         generated schemata/documentation.
+                         The second elementSpec is used for this purpose.
+                    -->
+                    <elementSpec ident="watermark" module="msdescription" mode="change">
+                        <attList>
+                            <attDef ident="type" usage="opt" mode="change">
+                                <valList mode="replace" type="semi">
+                                    <valItem ident="countermark">
+                                        <desc>The watermark is a countermark.</desc>
+                                    </valItem>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
 
                     <!-- use ENRICH values for supportDesc/@material and make the attribute required -->
                     <elementSpec ident="supportDesc" module="msdescription" mode="change">
