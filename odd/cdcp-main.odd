@@ -4984,7 +4984,7 @@
                         <constraintSpec ident="rend.info" scheme="schematron">
                             <constraint>
                                 <sch:rule 
-                                    context="*[@rend]">
+                                    context="*[@rend][not(self::tei:graphic)]">
                                     <sch:report 
                                         test="self::tei:hi and not(every $r in tokenize(@rend, '\s+')[string-length() gt 0] satisfies $r = ('bold', 'italic', 'smallcaps', 'roman', 'superscript', 'subscript', 'underline', 'overline', 'strikethrough'))"
                                         role="info">
