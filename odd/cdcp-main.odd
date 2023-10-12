@@ -5047,7 +5047,7 @@
                         <constraintSpec ident="locus-from-check" scheme="schematron">
                             <constraint>
                                 <sch:rule context="tei:locus[normalize-space(@from)][ancestor::tei:msItem][root(.)//tei:facsimile//tei:surface[@n]]">
-                                    <sch:assert test="@from=//tei:facsimile//tei:surface/@n" role="error">from attribute must point to surface/@n</sch:assert>
+                                    <sch:assert test="@from=//tei:facsimile//tei:surface/@n" role="error">@from must point to surface/@n</sch:assert>
                                 </sch:rule>
                             </constraint>
                         </constraintSpec>
