@@ -5044,13 +5044,17 @@
 
 
                     <elementSpec ident="locus" module="msdescription" mode="change">
-                        <constraintSpec ident="locus-ptr-checks" scheme="schematron">
+                        <constraintSpec ident="locus-from-check" scheme="schematron">
                             <constraint>
                                 <sch:rule context="tei:locus[normalize-space(@from)][ancestor::tei:msItem][root(.)//tei:facsimile//tei:surface[@n]]">
                                     <sch:assert test="@from=//tei:facsimile//tei:surface/@n" role="error">from attribute must point to surface/@n</sch:assert>
                                 </sch:rule>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="locus-to-check" scheme="schematron">
+                            <constraint>
                                 <sch:rule context="tei:locus[normalize-space(@to)][ancestor::tei:msItem][root(.)//tei:facsimile//tei:surface[@n]]">
-                                    <sch:assert test="@to=//tei:facsimile//tei:surface/@n" role="error">from attribute must point to surface/@n</sch:assert>
+                                    <sch:assert test="@to=//tei:facsimile//tei:surface/@n" role="error">@to must point to surface/@n</sch:assert>
                                 </sch:rule>
                             </constraint>
                         </constraintSpec>
