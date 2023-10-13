@@ -4910,44 +4910,6 @@
 
                     <classSpec ident="att.global.rendition" type="atts" mode="change" module="tei">
                         
-                        <!-- Inform people when they use the rend attribute in ways that the web sites will ignore, 
-                         and rendition/style attributes which it always ignores  -->
-                        <constraintSpec ident="rend.info" scheme="schematron">
-                            <constraint>
-                                <sch:rule 
-                                    context="*[@rend][not(self::tei:graphic)]">
-                                    <sch:report 
-                                        test="self::tei:hi and not(every $r in tokenize(@rend, '\s+')[string-length() gt 0] satisfies $r = ('bold', 'italic', 'smallcaps', 'roman', 'superscript', 'subscript', 'underline', 'overline', 'strikethrough'))"
-                                        role="info">
-                                        Any values can be used in rend attributes, but the web site currently only supports combinations of: 
-                                        bold, italic, roman, smallcaps, superscript, subscript, underline, overline, and strikethrough.
-                                    </sch:report>
-                                    <sch:report 
-                                        test="self::tei:list and not(every $r in tokenize(@rend, '\s+')[string-length() gt 0] satisfies $r = ('numbered', 'ordered', 'ol', 'bulleted', 'unordered', 'ul'))"
-                                        role="info">
-                                        Any values can be used in rend attributes, but the web site currently only supports combinations of: 
-                                        numbered, ordered, ol, bulleted, unordered, and ul.
-                                    </sch:report>
-                                    <sch:assert 
-                                        test="self::tei:hi or self::tei:list" 
-                                        role="info">
-                                        The web site currently only supports rend attributes for hi and list elements. Using it on <sch:value-of select="name(.)"/> 
-                                        elements is valid but will be ignored.
-                                    </sch:assert>
-                                </sch:rule>
-                                <sch:rule 
-                                    context="*[@rendition or @style]">
-                                    <sch:assert 
-                                        test="false()"
-                                        role="info">
-                                        The web site currently ignores rendition and style attributes.
-                                    </sch:assert>
-                                </sch:rule>
-                            </constraint>
-                        </constraintSpec>
-                        
-                      
-                        
                         <!-- Warn about empty or self-closing elements with a @key -->
                         <constraintSpec ident="selfclosing.warn" scheme="schematron">
                             <constraint>
