@@ -2,7 +2,7 @@ name: Build Schemata and Documentation
 on:
   push:
     branches:
-      - new_ci
+      - main
 
   workflow_dispatch:
 
@@ -10,7 +10,7 @@ permissions:
   contents: write # to be able to publish a GitHub release
 
 env:
-  BRANCH_NAME: new_ci
+  BRANCH_NAME: main
 
 jobs:
   update-odd:
