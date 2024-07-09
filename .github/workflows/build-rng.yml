@@ -2,37 +2,50 @@ name: Build Schemata and Documentation
 on:
   push:
     branches:
-      - main
-      
+      - new_ci
+
   workflow_dispatch:
+
+permissions:
+  contents: write # to be able to publish a GitHub release
+
+env:
+  BRANCH_NAME: new_ci
+
 jobs:
   update-odd:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          path: main
       - name: Checkout TEI Stylesheets
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: TEIC/Stylesheets
           path: ./tei
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.BRANCH_NAME }}
+          path: ${{ env.BRANCH_NAME }}
+
       - name: Update Schemata and Docs
         run: |
           wget "https://github.com/Saxonica/Saxon-HE/raw/main/12/Java/SaxonHE12-1J.zip"
           unzip *.zip
-          cd main/odd
+          cd $BRANCH_NAME
+          pushd odd
           OIFS="$IFS"
           IFS=$'\n'
           for odd_name in *.odd; do
             rng_name="$(echo "$odd_name"| sed -E 's#\.[^.]*$##g')";
-            $GITHUB_WORKSPACE/tei/bin/teitorelaxng "${odd_name}" "../rng/${rng_name}.rng";
+            $GITHUB_WORKSPACE/tei/bin/teitorng "${odd_name}" "../rng/${rng_name}.rng";
             java -DentityExpansionLimit=9000000 -jar $GITHUB_WORKSPACE/saxon-he-12.1.jar -xi:on -o:$GITHUB_WORKSPACE/full.odd "${odd_name}" $GITHUB_WORKSPACE/tei/odds/odd2odd.xsl
             java -DentityExpansionLimit=9000000 -jar $GITHUB_WORKSPACE/saxon-he-12.1.jar -xi:on -o:../documentation/${rng_name}.html "$GITHUB_WORKSPACE/full.odd" $GITHUB_WORKSPACE/tei/odds/odd2html.xsl
           done;
+          popd
+          .github/scripts/create_index.sh >available-schemata.html
           IFS="$OIFS"
           git config --global user.name 'ODD Bot'
           git config --global user.email '<>'
-          git add ../rng/*.rng ../documentation/*.html
-          git diff-index --quiet HEAD || (git commit -am "Workflow: Generate RelaxNG schemata and documentation" && git push)
+          git add rng/*.rng documentation/*.html  available-schemata.html
+          git diff-index --quiet HEAD || (git commit -am "ci: generate schemata and documentation" && git push)
