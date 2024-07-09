@@ -1,0 +1,55 @@
+{
+  "branches": [
+    "main"
+  ],
+  "plugins": [
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "preset": "conventionalcommits",
+        "releaseRules": [
+          {
+            "type": "chore",
+            "release": "patch"
+          },
+          {
+            "type": "docs",
+            "release": "patch"
+          },
+          {
+            "type": "refactor",
+            "release": "patch"
+          }
+        ]
+      }
+    ],
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "preset": "conventionalcommits",
+        "releaseRules": [
+          {
+            "type": "chore",
+            "release": "patch"
+          },
+          {
+            "type": "docs",
+            "release": "patch"
+          },
+          {
+            "type": "refactor",
+            "release": "patch"
+          }
+        ]
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "successComment": "This ${issue.pull_request ? 'Pull Request is included' : 'issue has been resolved'} in version ${nextRelease.version} :tada:",
+        "labels": false,
+        "releasedLabels": false
+      }
+    ]
+  ]
+}
