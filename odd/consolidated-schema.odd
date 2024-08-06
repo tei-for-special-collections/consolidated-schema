@@ -4853,7 +4853,7 @@
                                         test="@mainLang and string-length(normalize-space(string())) gt 0"
                                         role="error">
                                         The predominant language must be recorded in
-                                        using a code in a mainLang attribute (and an otherLang
+                                        using a code in a mainLang attribute (and an otherLangs
                                         attribute if there are other languages) and described as
                                         text within the textLang element.
                                     </sch:assert>
