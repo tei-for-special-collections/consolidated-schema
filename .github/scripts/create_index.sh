@@ -6,7 +6,12 @@
 # character. In the GitHub Action container, it interprets it as a literal 'n'
 IFS=$"
 "
-echo '<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Available Resources</title></head><body><h1>Available Resources</h1>'
+echo "---
+permalink: available-schemata.html
+---
+
+# Available Resources
+"
 if [ "$BUILD_CORE" = true ]; then
   ODDS_TO_PROCESS=$(find . -name '*.odd' -exec basename {} ".odd" \;);
 else
@@ -14,13 +19,12 @@ else
 fi
 for odd_file in $ODDS_TO_PROCESS; do
 	odd_basename=$(basename "${odd_file}" .odd)
-	echo "<h2>${odd_basename}</h2>"
+	echo "
+## ${odd_basename}"
 	if [ -f "documentation/${odd_basename}.html" -o -f "rng/${odd_basename}.rng" ]; then
-		echo "<ul>"
+		echo
 		for resource in "documentation/${odd_basename}.html" "rng/${odd_basename}.rng"; do
-			echo '<li><a href="'"${resource}"'">'"${resource}"'</a></li>'
+			echo "- [${resource}](${resource})"
 		done
-		echo '</ul>'
 	fi
 done
-echo '</body></html>'

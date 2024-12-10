@@ -49,11 +49,11 @@ jobs:
             java -DentityExpansionLimit=9000000 -jar $GITHUB_WORKSPACE/saxon-he-12.1.jar -xi:on -o:../documentation/${rng_name}.html "$GITHUB_WORKSPACE/full.odd" $GITHUB_WORKSPACE/tei/odds/odd2html.xsl
           done;
           popd
-          .github/scripts/create_index.sh >available-schemata.html
+          .github/scripts/create_index.sh >available-schemata.md
           IFS="$OIFS"
           git config --global user.name 'ODD Bot'
           git config --global user.email '<>'
-          git add rng/*.rng documentation/*.html  available-schemata.html
+          git add rng/*.rng documentation/*.html  available-schemata.md
           git diff-index --quiet HEAD || (git commit -am "ci: generate schemata and documentation" && git push)
         env:
           BUILD_CORE: ${{ vars.BUILD_CORE }}
