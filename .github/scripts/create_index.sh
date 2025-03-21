@@ -21,9 +21,9 @@ for odd_file in $ODDS_TO_PROCESS; do
 	odd_basename=$(basename "${odd_file}" .odd)
 	echo "
 ## ${odd_basename}"
-	if [ -f "documentation/${odd_basename}.html" -o -f "rng/${odd_basename}.rng" ]; then
+	if [ -f "consolidated-schema/documentation/${odd_basename}.html" -o -f "consolidated-schema/rng/${odd_basename}.rng" ]; then
 		echo
-		for resource in "documentation/${odd_basename}.html" "rng/${odd_basename}.rng"; do
+		for resource in "consolidated-schema/documentation/${odd_basename}.html" "consolidated-schema/rng/${odd_basename}.rng"; do
 			echo "- [${resource}](${resource})"
 		done
 	fi
