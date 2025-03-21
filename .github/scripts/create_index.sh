@@ -24,7 +24,7 @@ for odd_file in $ODDS_TO_PROCESS; do
 	if [ -f "documentation/${odd_basename}.html" -o -f "rng/${odd_basename}.rng" ]; then
 		echo
 		for resource in "documentation/${odd_basename}.html" "rng/${odd_basename}.rng"; do
-			echo "- [${resource}](./${resource})"
+			echo "- [${resource}](${resource})"
 		done
 	fi
 done
