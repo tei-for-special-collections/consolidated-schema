@@ -13,17 +13,17 @@ permalink: available-schemata.html
 # Available Resources
 "
 if [ "$BUILD_CORE" = true ]; then
-  ODDS_TO_PROCESS=$(find . -name '*.odd' -exec basename {} ".odd" \;);
+  ODDS_TO_PROCESS=$(find . -name '*.odd';);
 else
-  ODDS_TO_PROCESS=$(find . -name '*.odd' -not -name 'consolidated-schema.odd' -exec basename {} ".odd" \;);
+  ODDS_TO_PROCESS=$(find . -name '*.odd' -not -name 'consolidated-schema.odd');
 fi
 for odd_file in $ODDS_TO_PROCESS; do
 	odd_basename=$(basename "${odd_file}" .odd)
 	echo "
 ## ${odd_basename}"
-	if [ -f "consolidated-schema/documentation/${odd_basename}.html" -o -f "consolidated-schema/rng/${odd_basename}.rng" ]; then
+	if [ -f "documentation/${odd_basename}.html" -o -f "rng/${odd_basename}.rng" ]; then
 		echo
-		for resource in "consolidated-schema/documentation/${odd_basename}.html" "consolidated-schema/rng/${odd_basename}.rng"; do
+		for resource in "documentation/${odd_basename}.html" "rng/${odd_basename}.rng"; do
 			echo "- [${resource}](consolidated-schema/${resource})"
 		done
 	fi
