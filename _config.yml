@@ -6,4 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   This repository is core schema containing the shared standards employed by various projects and institutions, such as Fihrist, The Bodleian Libraries, The Cambridge University Library, The University of Manchester and Lancaster University.
 url: "https://tei-for-special-collections.github.io/consolidated-schema"
 #github_username:  mjhawkins
-theme: jekyll-theme-minimal
+#theme: jekyll-theme-minimal
+remote_theme: "jekyll/minima@1e8a445"
+plugins:
+- jekyll-remote-theme
