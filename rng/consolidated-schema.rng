@@ -5,8 +5,8 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2025-03-21T12:52:50Z. . 
-TEI Edition: P5 Version 4.10.0a. Last updated on 24th January 2025, revision 4e6b08ef5 
+Schema generated from ODD source 2025-04-02T15:10:32Z. . 
+TEI Edition: P5 Version 4.10.0a. Last updated on 18th March 2025, revision 637ece370 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.0a/ 
   
 --><!--TEI material can be licensed differently depending on the use you intend to make of it. Hence it is made available under both the CC+BY and BSD-2 licences. The CC+BY licence is generally appropriate for usages which treat TEI content as data or documentation. The BSD-2 licence is generally appropriate for usage of TEI content in a software environment. For further information or clarification, please contact the TEI Consortium (info@tei-c.org).-->
@@ -3827,7 +3827,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.0a/
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e134117-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e134236-constraint">
          <rule context="tei:content">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/compatibility/annotations/1.0', 'http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">content descendants must be in the
               namespaces
@@ -3900,7 +3900,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.0a/
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e135717-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e135823-constraint">
          <rule context="tei:datatype">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">datatype descendants must be in the
               namespaces
@@ -21368,10 +21368,10 @@ Sample values include: 1] primary; 2] secondary; 3] undergraduate; 4] graduate; 
                <choice>
                   <ref name="tei_model.noteLike"/>
                   <ref name="tei_model.biblLike"/>
+                  <ref name="tei_model.ptrLike"/>
                   <ref name="tei_linkGrp"/>
                   <ref name="tei_link"/>
                   <ref name="tei_idno"/>
-                  <ref name="tei_ptr"/>
                </choice>
             </zeroOrMore>
             <zeroOrMore>
@@ -21837,9 +21837,9 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
                <choice>
                   <ref name="tei_model.noteLike"/>
                   <ref name="tei_model.biblLike"/>
+                  <ref name="tei_model.ptrLike"/>
                   <ref name="tei_linkGrp"/>
                   <ref name="tei_link"/>
-                  <ref name="tei_ptr"/>
                </choice>
             </zeroOrMore>
             <zeroOrMore>
@@ -21876,7 +21876,7 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
                <choice>
                   <ref name="tei_model.personPart"/>
                   <ref name="tei_model.global"/>
-                  <ref name="tei_ptr"/>
+                  <ref name="tei_model.ptrLike"/>
                </choice>
             </zeroOrMore>
          </choice>
@@ -22130,8 +22130,8 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
                <choice>
                   <ref name="tei_model.noteLike"/>
                   <ref name="tei_model.biblLike"/>
+                  <ref name="tei_model.ptrLike"/>
                   <ref name="tei_idno"/>
-                  <ref name="tei_ptr"/>
                   <ref name="tei_linkGrp"/>
                   <ref name="tei_link"/>
                </choice>
@@ -23249,7 +23249,7 @@ Suggested values include: 1] persuade; 2] express; 3] inform; 4] entertain</a:do
    <define name="tei_att.global.linking.attribute.next">
       <optional>
          <attribute name="next">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to the next element of a virtual aggregate of which the current element is part.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(next) points to the next element of a virtual aggregate of which the current element is part.</a:documentation>
             <data type="anyURI">
                <param name="pattern">\S+</param>
             </data>
@@ -26047,8 +26047,8 @@ Sample values include: 1] TEI (text encoding initiative); 2] DBK (docbook); 3] X
          <ref name="tei_att.translatable.attributes"/>
          <optional>
             <attribute name="ident">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the remark concerned.</a:documentation>
-               <data type="string"/>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies the identifier by which the remarks may be referenced.</a:documentation>
+               <data type="Name"/>
             </attribute>
          </optional>
          <empty/>
@@ -26807,13 +26807,14 @@ Suggested values include: 1] exslt; 2] stx; 3] xslt; 4] xslt2; 5] xslt3; 6] xpat
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
-                      context="tei:constraintSpec[ @scheme eq 'schematron']/tei:constraint[ .//sch:assert | .//sch:report ]">
+                      context="(tei:constraintSpec|tei:constraintDecl)[ @scheme eq 'schematron'][ .//sch:assert | .//sch:report ]">
                <sch:let name="assertsHaveContext"
                         value="for $a in .//sch:assert return exists( $a/ancestor::sch:rule/@context )"/>
                <sch:let name="reportsHaveContext"
                         value="for $r in .//sch:report return exists( $r/ancestor::sch:rule/@context )"/>
-               <sch:report test="( $assertsHaveContext, $reportsHaveContext ) = false()"
-                           role="warning">The use of an &lt;sch:assert&gt; or &lt;sch:report&gt; that does not have a context (i.e., does not have an ancestor &lt;sch:rule&gt; with a @context attribute) in an ISO Schematron constraint specification is deprecated, and will become invalid after 2025-03-15.</sch:report>
+               <sch:report test="( $assertsHaveContext, $reportsHaveContext ) = false()">An &lt;sch:assert&gt; or &lt;sch:report&gt;
+          element must be a descendant of an &lt;sch:rule&gt; that has a @context; one or more inside this
+          <sch:value-of select="local-name(.)"/> are not.</sch:report>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
