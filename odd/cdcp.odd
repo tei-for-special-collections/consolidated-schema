@@ -3942,27 +3942,58 @@
                 <schemaSpec ident="consolidated-schema" start="TEI teiCorpus" prefix="tei_" targetLang="en" docLang="en" defaultExceptions="http://www.tei-c.org/ns/1.0 http://www.w3.org/1998/Math/MathML teix:egXML">
                     <moduleRef url="https://www.tei-c.org/release/xml/tei/Exemplars/mathml2-main.rng"/>
                     <moduleRef n="01" key="tei"/>
-                    <moduleRef n="02" key="header"/>
-                    <moduleRef n="03" key="core"/>
-                    <moduleRef n="04" key="textstructure"/>
-                    <moduleRef n="05" key="gaiji"/>
-                    <moduleRef n="06" key="verse"/><!-- Unused by CUDL-->
-                    <moduleRef n="07" key="drama"/><!-- Unused by CUDL-->
-                    <moduleRef n="08" key="spoken"/><!-- Unused by CUDL-->
-                    <moduleRef n="09" key="cmc"/><!-- Unused by CUDL-->
-                    <moduleRef n="18" key="analysis"/>
-                    <moduleRef n="10" key="dictionaries"/><!-- Unused by CUDL-->
-                    <moduleRef n="11" key="msdescription"/>
-                    <moduleRef n="12" key="transcr"/>
-                    <moduleRef n="13" key="textcrit"/>
-                    <moduleRef n="14" key="namesdates"/>
-                    <moduleRef n="15" key="figures"/>
-                    <moduleRef n="16" key="corpus"/><!-- Unused by CUDL-->
-                    <moduleRef n="17" key="linking"/>
-                    <moduleRef n="19" key="iso-fs"/><!-- Unused by CUDL-->
-                    <moduleRef n="20" key="nets"/><!-- Unused by CUDL-->
-                    <moduleRef n="22" key="certainty"/><!-- Unused by CUDL-->
+                    <moduleRef n="02" key="header" include="abstract authority availability catDesc category change classDecl correspAction correspDesc creation edition editorialDecl encodingDesc extent fileDesc funder handNote idno keywords langUsage language licence listChange normalization notesStmt principal profileDesc projectDesc publicationStmt rendition revisionDesc samplingDecl seriesStmt sourceDesc tagsDecl taxonomy teiHeader textClass titleStmt">
+                  <!--Unused elements: appInfo application biblFull cRefPattern calendar calendarDesc catRef citeData citeStructure classCode conversion correction correspContext distributor editionStmt geoDecl hyphenation interpretation listPrefixDef namespace prefixDef punctuation quotation refState refsDecl schemaRef scriptNote segmentation sponsor stdVals styleDefDecl tagUsage unitDecl unitDef xenoData-->
+               </moduleRef>
+                    <moduleRef n="03" key="core" include="abbr add addrLine address analytic author bibl biblScope biblStruct cb choice cit citedRange corr date del desc editor email expan foreign gap graphic head hi imprint item l label lb lg list listBibl measure media milestone monogr name note num orig p pb postCode ptr pubPlace publisher q quote ref reg relatedItem resp respStmt rs series sic street term textLang time title unclear">
+                  <!--Unused elements: binaryObject distinct divGen ellipsis emph gb gloss headItem headLabel index measureGrp meeting mentioned noteGrp postBox rb rt ruby said soCalled sp speaker stage teiCorpus unit-->
+               </moduleRef>
+                    <moduleRef n="04" key="textstructure" include="TEI body closer dateline div front opener postscript salute signed text">
+                  <!--Unused elements: argument back byline div1 div2 div3 div4 div5 div6 div7 docAuthor docDate docEdition docImprint docTitle epigraph floatingText group imprimatur titlePage titlePart trailer-->
+               </moduleRef>
+                    <moduleRef n="05" key="gaiji" include="char charDecl g mapping">
+                  <!--Unused elements: glyph localProp unicodeProp unihanProp-->
+               </moduleRef>
+                    <!-- Unused by CUDL-->
+                    <!--
+                    <moduleRef n="06" key="verse"/>
+                    <moduleRef n="07" key="drama"/>
+                    <moduleRef n="08" key="spoken"/>
+                    <moduleRef n="09" key="cmc"/>
+                    <moduleRef n="10" key="dictionaries"/>
+                    -->
+                    <moduleRef n="18" key="analysis" include="pc w">
+                        <!--Unused elements: c cl interp interpGrp m phr s span spanGrp-->
+                    </moduleRef>
+                    <moduleRef n="11" key="msdescription" include="accMat acquisition additional additions adminInfo altIdentifier binding bindingDesc catchwords collation collection colophon condition custEvent custodialHist decoDesc decoNote depth dim dimensions explicit filiation finalRubric foliation handDesc height heraldry history incipit institution layout layoutDesc locus locusGrp material msContents msDesc msIdentifier msItem msName msPart musicNotation objectDesc objectType origDate origPlace origin physDesc provenance recordHist repository rubric sealDesc secFol signatures source stamp summary support supportDesc surrogates watermark width">
+                  <!--Unused elements: msFrag msItemStruct scriptDesc seal typeDesc typeNote-->
+               </moduleRef>
+                    <moduleRef n="12" key="transcr" include="addSpan damage damageSpan delSpan ex facsimile fw handNotes handShift metamark mod restore retrace space subst supplied surface undo zone">
+                  <!--Unused elements: am line listTranspose path redo secl sourceDoc substJoin surfaceGrp surplus transpose-->
+               </moduleRef>
+                    <moduleRef n="13" key="textcrit" include="app rdg">
+                  <!--Unused elements: lacunaEnd lacunaStart lem listApp listWit rdgGrp variantEncoding wit witDetail witEnd witStart witness-->
+               </moduleRef>
+                    <moduleRef n="14" key="namesdates" include="addName country forename geo listPerson listPlace objectName orgName persName person place placeName region roleName settlement surname">
+                  <!--Unused elements: affiliation age birth bloc climate death district education event eventName faith floruit genName gender geogFeat geogName langKnowledge langKnown listEvent listNym listObject listOrg listRelation location nameLink nationality nym object objectIdentifier occupation offset org persPronouns personGrp persona population relation residence sex socecStatus state terrain trait-->
+               </moduleRef>
+                    <moduleRef n="15" key="figures" include="cell figDesc figure formula row table">
+                  <!--Unused elements: notatedMusic-->
+               </moduleRef>
+                    <!-- Unused by CUDL-->
+                    <!--
+                    <moduleRef n="16" key="corpus"/>
+                    -->
+                    <moduleRef n="17" key="linking" include="ab anchor seg">
+                  <!--Unused elements: alt altGrp annotation join joinGrp link linkGrp listAnnotation standOff timeline when-->
+               </moduleRef>
+                    <!-- Unused by CUDL-->
+                    <!--
+                    <moduleRef n="19" key="iso-fs"/>
+                    <moduleRef n="20" key="nets"/>
+                    <moduleRef n="22" key="certainty"/>
                     <moduleRef n="23" key="tagdocs"/>
+                    -->
 
                     <elementSpec module="figures" ident="formula" mode="change">
                         <content>
