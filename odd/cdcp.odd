@@ -4215,18 +4215,101 @@
                             </attDef>
                             <attDef ident="script" mode="change">
                                 <valList mode="replace" type="semi">
-                                    <valItem ident="capitalsSquare">
-                                        <desc>The script of the hand is square capitals</desc>
+                                    <valItem ident="ajami">
+                                        <desc>The script of the hand is ajami</desc>
+                                    </valItem>
+                                    <valItem ident="ashkenazi">
+                                        <desc>The script of the hand is ashkenazi</desc>
+                                    </valItem>
+                                    <valItem ident="asomtavruli">
+                                        <desc>The script of the hand is asomtavruli</desc>
+                                    </valItem>
+                                    <valItem ident="bengali">
+                                        <desc>The script of the hand is bengali</desc>
+                                    </valItem>
+                                    <valItem ident="bihari">
+                                        <desc>The script of the hand is bihari</desc>
+                                    </valItem>
+                                    <valItem ident="bolorgir">
+                                        <desc>The script of the hand is bolorgir</desc>
                                     </valItem>
                                     <valItem ident="capitalsRustic">
                                         <desc>The script of the hand is rustic capitals</desc>
                                     </valItem>
-                                    <valItem ident="uncial">
-                                        <desc>The script of the hand is uncial</desc>
+                                    <valItem ident="capitalsSquare">
+                                        <desc>The script of the hand is square capitals</desc>
                                     </valItem>
-
+                                    <valItem ident="cursiva">
+                                        <desc>The script of the hand is cursiva (‘cancelleresca’, ‘bastarda’, ‘lettre
+                                            batarde’, ‘secretary’, etc.)</desc>
+                                    </valItem>
+                                    <valItem ident="cursivaAntiquior">
+                                        <desc>The script of the hand is cursiva antiquior (anglicana, 'Ältere gotische Kursive')</desc>
+                                    </valItem>
+                                    <valItem ident="divani">
+                                        <desc>The script of the hand is divani</desc>
+                                    </valItem>
+                                    <valItem ident="eastSyriac">
+                                        <desc>The script of the hand is eastSyriac</desc>
+                                    </valItem>
+                                    <valItem ident="erkatagir">
+                                        <desc>The script of the hand is erkatagir</desc>
+                                    </valItem>
+                                    <valItem ident="estrangela">
+                                        <desc>The script of the hand is estrangela</desc>
+                                    </valItem>
+                                    <valItem ident="geez">
+                                        <desc>The script of the hand is geez</desc>
+                                    </valItem>
+                                    <valItem ident="geez">
+                                        <desc>The script of the hand is geez</desc>
+                                    </valItem>
+                                    <valItem ident="gothicoAntiqua">
+                                        <desc>The script of the hand is gothico-antiqua (‘fere-humanistica’,
+                                            ‘gothico-humanistica’)</desc>
+                                    </valItem>
+                                    <valItem ident="grantha">
+                                        <desc>The script of the hand is grantha</desc>
+                                    </valItem>
+                                    <valItem ident="gupta">
+                                        <desc>The script of the hand is gupta</desc>
+                                    </valItem>
                                     <valItem ident="halfUncial">
                                         <desc>The script of the hand is half uncial</desc>
+                                    </valItem>
+                                    <valItem ident="humanistica">
+                                        <desc>The script of the hand is humanistic (unspecified)</desc>
+                                    </valItem>
+                                    <valItem ident="humanisticaCursiva">
+                                        <desc>The script of the hand is humanistic cursive</desc>
+                                    </valItem>
+                                    <valItem ident="humanisticaSemitextualis">
+                                        <desc>The script of the hand is humanistic semitextualis</desc>
+                                    </valItem>
+                                    <valItem ident="humanisticaTextualis">
+                                        <desc>The script of the hand is humanistic textualis (unspecified)</desc>
+                                    </valItem>
+                                    <valItem ident="hybrida">
+                                        <desc>The script of the hand is cursiva (‘semihybrida’, ‘loopless bastarda’,
+                                            ‘fractura’, ‘mercantesca’, etc.)</desc>
+                                    </valItem>
+                                    <valItem ident="jainanagari">
+                                        <desc>The script of the hand is jainanagari</desc>
+                                    </valItem>
+                                    <valItem ident="kasmiranagari">
+                                        <desc>The script of the hand is kasmiranagari</desc>
+                                    </valItem>
+                                    <valItem ident="maghribi">
+                                        <desc>The script of the hand is maghribi</desc>
+                                    </valItem>
+                                    <valItem ident="malayalam">
+                                        <desc>The script of the hand is malayalam</desc>
+                                    </valItem>
+                                    <valItem ident="minuscule">
+                                        <desc>The script of the hand is an unspecifiec minuscule (not Caroline, insular, or English vernacular)</desc>
+                                    </valItem>
+                                    <valItem ident="minusculeCaroline">
+                                        <desc>The script of the hand is Caroline minuscule (English and continental variants of the script)</desc>
                                     </valItem>
                                     <valItem ident="minusculeInsular">
                                         <desc>The script of the hand is insular minuscule</desc>
@@ -4234,54 +4317,105 @@
                                     <valItem ident="minusculeVernacular">
                                         <desc>The script of the hand is English vernacular minuscule ('Anglo-Saxon minuscule')</desc>
                                     </valItem>
-                                    <valItem ident="minusculeCaroline">
-                                        <desc>The script of the hand is Caroline minuscule (English and continental variants of the script)</desc>
+                                    <valItem ident="mkhedruli">
+                                        <desc>The script of the hand is mkhedruli</desc>
                                     </valItem>
-
-                                    <valItem ident="minuscule">
-                                        <desc>The script of the hand is an unspecifiec minuscule (not Caroline, insular, or English vernacular)</desc>
+                                    <valItem ident="muhaqqaq">
+                                        <desc>The script of the hand is muhaqqaq</desc>
+                                    </valItem>
+                                    <valItem ident="naipalanagari">
+                                        <desc>The script of the hand is naipalanagari</desc>
+                                    </valItem>
+                                    <valItem ident="naskh">
+                                        <desc>The script of the hand is naskh</desc>
+                                    </valItem>
+                                    <valItem ident="nastaliq">
+                                        <desc>The script of the hand is nastaliq</desc>
+                                    </valItem>
+                                    <valItem ident="siyaq">
+                                        <desc>The script of the hand is siyaq</desc>
+                                    </valItem>
+                                    <valItem ident="notrgir">
+                                        <desc>The script of the hand is notrgir</desc>
+                                    </valItem>
+                                    <valItem ident="nuskhuri">
+                                        <desc>The script of the hand is nuskhuri</desc>
+                                    </valItem>
+                                    <valItem ident="oriental">
+                                        <desc>The script of the hand is oriental</desc>
+                                    </valItem>
+                                    <valItem ident="oriya">
+                                        <desc>The script of the hand is oriya</desc>
                                     </valItem>
                                     <valItem ident="protogothic">
                                         <desc>The script of the hand is protogothic (Romanesque, praegothica)</desc>
                                     </valItem>
-                                    <valItem ident="textualisNorthern">
-                                        <desc>The script of the hand is Northern textualis</desc>
+                                    <valItem ident="ranjana">
+                                        <desc>The script of the hand is ranjana</desc>
                                     </valItem>
-
-                                    <valItem ident="textualisSouthern">
-                                        <desc>The script of the hand is Southern textualis</desc>
+                                    <valItem ident="rashi">
+                                        <desc>The script of the hand is rashi</desc>
+                                    </valItem>
+                                    <valItem ident="rayhani">
+                                        <desc>The script of the hand is rayhani</desc>
+                                    </valItem>
+                                    <valItem ident="riqa">
+                                        <desc>The script of the hand is riqa</desc>
+                                    </valItem>
+                                    <valItem ident="ruqah">
+                                        <desc>The script of the hand is ruqah</desc>
+                                    </valItem>
+                                    <valItem ident="sarada">
+                                        <desc>The script of the hand is sarada</desc>
+                                    </valItem>
+                                    <valItem ident="sarada">
+                                        <desc>The script of the hand is sarada</desc>
                                     </valItem>
                                     <valItem ident="semitextualis">
                                         <desc>The script of the hand is semi textualis</desc>
                                     </valItem>
-                                    <valItem ident="cursivaAntiquior">
-                                        <desc>The script of the hand is cursiva antiquior (anglicana, 'Ältere gotische Kursive')</desc>
+                                    <valItem ident="sephardi">
+                                        <desc>The script of the hand is sephardi</desc>
                                     </valItem>
-                                    <valItem ident="cursiva">
-                                        <desc>The script of the hand is cursiva (‘cancelleresca’, ‘bastarda’, ‘lettre
-                                            batarde’, ‘secretary’, etc.)</desc>
+                                    <valItem ident="serto">
+                                        <desc>The script of the hand is serto</desc>
                                     </valItem>
-                                    <valItem ident="hybrida">
-                                        <desc>The script of the hand is cursiva (‘semihybrida’, ‘loopless bastarda’,
-                                            ‘fractura’, ‘mercantesca’, etc.)</desc>
+                                    <valItem ident="shikastah">
+                                        <desc>The script of the hand is shikastah</desc>
                                     </valItem>
-                                    <valItem ident="gothicoAntiqua">
-                                        <desc>The script of the hand is gothico-antiqua (‘fere-humanistica’,
-                                            ‘gothico-humanistica’)</desc>
+                                    <valItem ident="sinhala">
+                                        <desc>The script of the hand is sinhala</desc>
                                     </valItem>
-                                    <valItem ident="humanistica">
-                                        <desc>The script of the hand is humanistic (unspecified)</desc>
+                                    <valItem ident="taliq">
+                                        <desc>The script of the hand is taliq</desc>
                                     </valItem>
-                                    <valItem ident="humanisticaTextualis">
-                                        <desc>The script of the hand is humanistic textualis (unspecified)</desc>
+                                    <valItem ident="tamil">
+                                        <desc>The script of the hand is tamil</desc>
                                     </valItem>
-                                    <valItem ident="humanisticaSemitextualis">
-                                        <desc>The script of the hand is humanistic semitextualis</desc>
+                                    <valItem ident="telugu">
+                                        <desc>The script of the hand is telugu</desc>
                                     </valItem>
-                                    <valItem ident="humanisticaCursiva">
-                                        <desc>The script of the hand is humanistic cursive</desc>
+                                    <valItem ident="textualisNorthern">
+                                        <desc>The script of the hand is Northern textualis</desc>
                                     </valItem>
-
+                                    <valItem ident="textualisSouthern">
+                                        <desc>The script of the hand is Southern textualis</desc>
+                                    </valItem>
+                                    <valItem ident="thuluth">
+                                        <desc>The script of the hand is thuluth</desc>
+                                    </valItem>
+                                    <valItem ident="tughra">
+                                        <desc>The script of the hand is tughra</desc>
+                                    </valItem>
+                                    <valItem ident="uncial">
+                                        <desc>The script of the hand is uncial</desc>
+                                    </valItem>
+                                    <valItem ident="unknown">
+                                        <desc>The script of the hand is unknown</desc>
+                                    </valItem>
+                                    <valItem ident="yemenite">
+                                        <desc>The script of the hand is yemenite</desc>
+                                    </valItem>
                                 </valList>
                             </attDef>
                         </attList>
