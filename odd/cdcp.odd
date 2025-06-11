@@ -4778,31 +4778,63 @@
                                     <dataRef key="teidata.word"/>
                                 </datatype>
                                 <valList type="semi">
-                                    <valItem ident="perg">
-                                        <desc>The object is composed of parchment or vellum</desc>
+                                    <valItem ident="bamboo">
+                                        <desc>The object is composed of bamboo</desc>
                                     </valItem>
-                                    <valItem ident="chart">
+                                    <valItem ident="bark">
+                                        <desc>The object is composed of bark</desc>
+                                    </valItem>
+                                    <valItem ident="bone">
+                                        <desc>The object is composed of bone</desc>
+                                    </valItem>
+                                    <valItem ident="ceramic">
+                                        <desc>The object is ceramic</desc>
+                                    </valItem>
+                                    <valItem ident="clay">
+                                        <desc>The object is composed of clay</desc>
+                                    </valItem>
+                                    <valItem ident="enamel">
+                                        <desc>The object is composed of enamel</desc>
+                                    </valItem>
+                                    <valItem ident="glass">
+                                        <desc>The object is composed of glass</desc>
+                                    </valItem>
+                                    <valItem ident="leather">
+                                        <desc>The object is composed of leather</desc>
+                                    </valItem>
+                                    <valItem ident="metal">
+                                        <desc>The object is composed of metal</desc>
+                                    </valItem>
+                                    <valItem ident="mixed">
+                                        <desc>The object is composed of mixed materials</desc>
+                                    </valItem>
+                                    <valItem ident="other">
+                                        <desc>The object is composed of another material</desc>
+                                    </valItem>
+                                    <valItem ident="palmLeaf">
+                                        <desc>The object is composed of palm leaves</desc>
+                                    </valItem>
+                                    <valItem ident="paper">
                                         <desc>The object is composed of any kind of paper. Give more details,
                                             if any, in a child <gi>support</gi> element.</desc>
                                     </valItem>
                                     <valItem ident="papyrus">
                                         <desc>The object is composed of papyrus.</desc>
                                     </valItem>
-                                    <valItem ident="palm">
-                                        <desc>The object is composed of palm leaves.</desc>
+                                    <valItem ident="parchment">
+                                        <desc>The object is composed of parchment or vellum</desc>
                                     </valItem>
-                                    <valItem ident="mixed">
-                                        <desc>The object is composed of a combination of paper and
-                                            parchment. The nature of the combination should be
-                                            specified in the <gi>support</gi> element.</desc>
+                                    <valItem ident="plaster">
+                                        <desc>The object is composed of plaster</desc>
                                     </valItem>
-                                    <valItem ident="other">
-                                        <desc>The object is composed of another material (e.g.
-                                            wood).</desc>
+                                    <valItem ident="shell">
+                                        <desc>The object is composed of shell</desc>
                                     </valItem>
-                                    <valItem ident="unknown">
+                                    <valItem ident="textile">
+                                        <desc>The object is textile</desc>
+                                    </valItem><valItem ident="unknown">
                                         <desc>The material of which is object is composed is not
-                                            known.</desc>
+                                            known</desc>
                                     </valItem>
                                 </valList>
                             </attDef>
