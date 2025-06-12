@@ -5,15 +5,15 @@ permalink: available-schemata.html
 # Available Resources
 
 
-## consolidated-schema
-
-- [documentation/consolidated-schema.html](documentation/consolidated-schema.html)
-- [rng/consolidated-schema.rng](rng/consolidated-schema.rng)
-
 ## cdcp
 
 - [documentation/cdcp.html](documentation/cdcp.html)
 - [rng/cdcp.rng](rng/cdcp.rng)
+
+## consolidated-schema
+
+- [documentation/consolidated-schema.html](documentation/consolidated-schema.html)
+- [rng/consolidated-schema.rng](rng/consolidated-schema.rng)
 
 ## manuscripts-catalogue
 
