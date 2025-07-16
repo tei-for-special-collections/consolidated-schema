@@ -56,6 +56,10 @@
     
     <!-- Handling of <egXML> elements in the TEI example namespace. -->
     
+    <xsl:template match="tei:p[teix:egXML][not(*[not(self::teix:egXML)])][not(normalize-space(string-join(text(),' ')))]">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
     <xsl:template match="teix:egXML" priority="999" mode="#all">
         <xsl:variable name="container_element" select="cudl:determine-output-element-name(.,'div')"/>
         
