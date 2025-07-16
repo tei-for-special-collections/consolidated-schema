@@ -5,8 +5,8 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2025-06-12T16:21:20Z. . 
-TEI Edition: P5 Version 4.10.0a. Last updated on 10th June 2025, revision 78f0e8312 
+Schema generated from ODD source 2025-07-16T14:53:38Z. . 
+TEI Edition: P5 Version 4.10.0a. Last updated on 6th July 2025, revision 9dbe3a1e6 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.0a/ 
   
 --><!--TEI material can be licensed differently depending on the use you intend to make of it. Hence it is made available under both the CC+BY and BSD-2 licences. The CC+BY licence is generally appropriate for usages which treat TEI content as data or documentation. The BSD-2 licence is generally appropriate for usage of TEI content in a software environment. For further information or clarification, please contact the TEI Consortium (info@tei-c.org).-->
@@ -3827,7 +3827,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.0a/
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e135046-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e135067-constraint">
          <rule context="tei:content">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/compatibility/annotations/1.0', 'http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">content descendants must be in the
               namespaces
@@ -3900,7 +3900,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.0a/
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e136643-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e136664-constraint">
          <rule context="tei:datatype">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">datatype descendants must be in the
               namespaces
@@ -26486,7 +26486,7 @@ Sample values include: 1] TEI (text encoding initiative); 2] DBK (docbook); 3] X
    </define>
    <define name="tei_listRef">
       <element name="listRef">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(list of references) supplies a list of significant references in the current document or elsewhere.</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(list of references) supplies a list of significant references in the current document or elsewhere. [23.4.1. Description of Components 24.5.1. Making a Unified ODD]</a:documentation>
          <group>
             <zeroOrMore>
                <ref name="tei_desc"/>
@@ -26909,7 +26909,7 @@ Suggested values include: 1] web; 2] print; 3] plaintext</a:documentation>
    </define>
    <define name="tei_outputRendition">
       <element name="outputRendition">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">describes the rendering or appearance intended for all occurrences of an element in a specified context for a specified type of output.</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">describes the rendering or appearance intended for all occurrences of an element in a specified context for a specified type of output. [23.5.4.2. Output Rendition ]</a:documentation>
          <text/>
          <ref name="tei_att.global.attributes"/>
          <optional>
@@ -26926,7 +26926,7 @@ Sample values include: 1] first-line; 2] first-letter; 3] before; 4] after</a:do
    </define>
    <define name="tei_paramList">
       <element name="paramList">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">list of parameter specifications.</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">list of parameter specifications. [23.5.4.5. Behaviours and their parameters 23.5.4.8. Defining a processing model]</a:documentation>
          <zeroOrMore>
             <ref name="tei_paramSpec"/>
          </zeroOrMore>
