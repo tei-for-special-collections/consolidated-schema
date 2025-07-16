@@ -416,7 +416,8 @@
                         attribute defining the language of the description, and a <gi>fileDesc</gi>
                         and <gi>revisionDesc</gi> element. The <gi>TEI</gi> element itself MUST have
                         an <att>xml:id</att> attribute whose value is the unique identifier for the
-                        manuscript. <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        manuscript.</p>
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
                             <TEI xml:id="manuscript_110">
                                 <teiHeader xml:lang="en">
                                     <fileDesc>
@@ -447,7 +448,7 @@
                             <specDesc key="fileDesc"/>
                             <specDesc key="facsimile"/>
                         </specList>-->
-                    </p>
+                    
                     <div xml:id="filedescription">
                         <head>File Description</head>
                         <p>The <gi>fileDesc</gi> element contains a <gi>titleStmt</gi>,
