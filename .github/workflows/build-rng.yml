@@ -46,7 +46,7 @@ jobs:
             rng_name="$(echo "$odd_name"| sed -E 's#\.[^.]*$##g')";
             $GITHUB_WORKSPACE/tei/bin/teitorng "${odd_name}" "../rng/${rng_name}.rng";
             java -DentityExpansionLimit=9000000 -jar $GITHUB_WORKSPACE/saxon-he-12.1.jar -xi:on -o:$GITHUB_WORKSPACE/full.odd "${odd_name}" $GITHUB_WORKSPACE/tei/odds/odd2odd.xsl
-            java -DentityExpansionLimit=9000000 -jar $GITHUB_WORKSPACE/saxon-he-12.1.jar -xi:on -o:../documentation/${rng_name}.html "$GITHUB_WORKSPACE/full.odd" $GITHUB_WORKSPACE/tei/odds/odd2html.xsl
+            java -DentityExpansionLimit=9000000 -jar $GITHUB_WORKSPACE/saxon-he-12.1.jar -xi:on -o:../documentation/${rng_name}.html "$GITHUB_WORKSPACE/full.odd" $GITHUB_WORKSPACE/main/.github/lib/xslt/import-sample.xsl
           done;
           popd
           .github/scripts/create_index.sh >available-schemata.md
