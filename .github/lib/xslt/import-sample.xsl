@@ -56,7 +56,7 @@
     
     <!-- Handling of <egXML> elements in the TEI example namespace. -->
     
-    <xsl:template match="tei:p[teix:egXML]">
+    <xsl:template match="tei:p[teix:egXML]" mode="#all" priority="999">
         <xsl:apply-templates/>
     </xsl:template>
     
