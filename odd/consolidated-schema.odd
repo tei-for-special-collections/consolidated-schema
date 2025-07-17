@@ -3940,7 +3940,7 @@
             <div xml:id="schema">
                 <head>Cambridge Digital Collections Platform</head>
                 
-                <schemaSpec ident="consolidated-schema" start="TEI teiCorpus" prefix="tei_" targetLang="en" docLang="en" defaultExceptions="http://www.tei-c.org/ns/1.0 http://www.w3.org/1998/Math/MathML teix:egXML">
+                <schemaSpec ident="consolidated-schema" start="TEI teiCorpus" prefix="tei_" targetLang="en" docLang="en" defaultExceptions="http://www.tei-c.org/ns/1.0 http://www.w3.org/1998/Math/MathML teix:egXML" source="tei:4.9.0">
                     <moduleRef url="https://www.tei-c.org/release/xml/tei/Exemplars/mathml2-main.rng"/>
                     <moduleRef n="01" key="tei"/>
                     <moduleRef n="02" key="header"/>
