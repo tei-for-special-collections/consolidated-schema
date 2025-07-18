@@ -1,21 +1,41 @@
----
-permalink: /index.html
----
+# The Consolidated Schema
 
-This repository is core schema containing the shared standards employed by various projects and institutions, such as [Fihrist](https://github.com/fihristorg/fihrist-mss), The Bodleian Libraries ([Senmai](https://github.com/bodleian/senmai-mss), [Medieval](https://github.com/bodleian/medieval-mss), [Hebrew](https://github.com/bodleian/hebrew-mss), [Genizah](https://github.com/bodleian/genizah-mss), [Georgian](https://github.com/bodleian/georgian-mss), [Armenian](https://github.com/bodleian/armenian-mss), and [Tibetan](https://github.com/bodleian/karchak-mss)), The Cambridge University Library ([CUDL](https://cudl.lib.cam.ac.uk/)), The University of Manchester and Lancaster University.
+This repository hosts the **Consolidated Schema**, a customized TEI P5 schema written in TEI’s ODD. It’s used by:
 
-The schema is a customised version of the TEI (Text Encoding Initiative) P5 standard written using TEI's [ODD](http://www.tei-c.org/guidelines/customization/getting-started-with-p5-odds/). This file then converted into a RelaxNG (with schematron) file that XML editors and validating parsers can understand as well as html documentation for encoders.
+- **The Bodleian Libraries**  
+  - [Senmai (general MSS)](https://github.com/bodleian/senmai-mss)  
+  - [Medieval](https://github.com/bodleian/medieval-mss)  
+  - [Hebrew](https://github.com/bodleian/hebrew-mss)  
+  - [Genizah](https://github.com/bodleian/genizah-mss)  
+  - [Georgian](https://github.com/bodleian/georgian-mss)  
+  - [Armenian](https://github.com/bodleian/armenian-mss)  
+  - [Tibetan (Karchak)](https://github.com/bodleian/karchak-mss)  
+- **Cambridge University Library**  
+  - [CUDL](https://cudl.lib.cam.ac.uk/)  
+- **Fihrist**  
+   - [fihrist-mss](https://github.com/fihristorg/fihrist-mss)  
+- **The University of Manchester**  
+- **Lancaster University**
 
-Every commit onto the main branch of this repository triggers an automatic rebuild of the RelaxNG schema file ([https://tei-for-special-collections.github.io/consolidated-schema/rng/consolidated-schema.rng](https://tei-for-special-collections.github.io/consolidated-schema/available-schemata.html) and documentation ([https://tei-for-special-collections.github.io/consolidated-schema/documentation/consolidated-schema.html](https://tei-for-special-collections.github.io/consolidated-schema/available-schemata.html). These updated files are committed both to the repository and automatically deployed onto our github pages site ([https://tei-for-special-collections.github.io/consolidated-schema/available-schemata.html](https://tei-for-special-collections.github.io/consolidated-schema/available-schemata.html)
+## Documentation & Deployment
 
-To validate against the schema, you can either select it manually when validating your file or you can add in an appropriate `xml-model` declaration that your XML editor should automatically use). The xml-models for both RelaxNG and schematron validation are:
+The HTML documentation and RelaxNG schema are automatically generated and published at [https://tei-for-special-collections.github.io/consolidated-schema/](https://tei-for-special-collections.github.io/consolidated-schema/) whenever its ODD is updated.
+
+## Creating Your Own Schema based on the Consolidated Schema.
+
+To base your own TEI customization on the Consolidated Schema, add the following `source` attribute to your `<schemaSpec>`:
 
 ```
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/rng/consolidated-schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/rng/consolidated-schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<schemaSpec
+  source="https://raw.githubusercontent.com/tei-for-special-collections/consolidated-schema/refs/heads/main/releases/odd/consolidated-schema.compiled.odd"
+/>
 ```
 
-You can see all the schemata and documentation available in this repository in its [available schemata list](https://tei-for-special-collections.github.io/consolidated-schema/available-schemata.html)
+## Provided Customizations
 
-TODO: Create template file(s)
+We have provided two customisations in this repository. 
+
+- [Cambridge Digital Collection Platform](https://cambridge-collection.github.io/) uses [odd/cdcp.odd](https://github.com/tei-for-special-collections/consolidated-schema/blob/main/odd/cdcp.odd).
+- [Medieval Manuscripts in Oxford Libraries](https://medieval.bodleian.ox.ac.uk/) uses  [odd/manuscripts-catalogue.odd](https://github.com/tei-for-special-collections/consolidated-schema/blob/main/odd/manuscripts-catalogue.odd).
+
+
