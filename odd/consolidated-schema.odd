@@ -4215,7 +4215,7 @@
                                 </valList>
                             </attDef>
                             <attDef ident="script" mode="change">
-                                <valList mode="replace" type="semi">
+                                <valList mode="replace" type="closed">
                                     <valItem ident="ajami">
                                         <desc>The script of the hand is ajami</desc>
                                     </valItem>
@@ -4778,7 +4778,7 @@
                                 <datatype maxOccurs="1">
                                     <dataRef key="teidata.word"/>
                                 </datatype>
-                                <valList type="semi">
+                                <valList type="closed">
                                     <valItem ident="bamboo">
                                         <desc>The object is composed of bamboo</desc>
                                     </valItem>
