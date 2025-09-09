@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2025-07-18T10:55:26Z. . 
+Schema generated from ODD source 2025-09-09T08:17:00Z. . 
 TEI Edition: P5 Version 4.9.0. Last updated on 24th January 2025, revision f73186978 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.9.0/ 
   
@@ -12822,8 +12822,7 @@ Suggested values include: 1] WGS84 (World Geodetic System); 2] MGRS (Military Gr
          <ref name="tei_att.scope.attribute.scope"/>
          <optional>
             <attribute name="script">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the particular script or writing style used by this hand, for example secretary, copperplate, Chancery, Italian, etc.
-Suggested values include: 1] ajami; 2] ashkenazi; 3] asomtavruli; 4] bengali; 5] bihari; 6] bolorgir; 7] capitalsRustic; 8] capitalsSquare; 9] cursiva; 10] cursivaAntiquior; 11] divani; 12] eastSyriac; 13] erkatagir; 14] estrangela; 15] geez; 16] geez; 17] gothicoAntiqua; 18] grantha; 19] gupta; 20] halfUncial; 21] humanistica; 22] humanisticaCursiva; 23] humanisticaSemitextualis; 24] humanisticaTextualis; 25] hybrida; 26] jainanagari; 27] kasmiranagari; 28] maghribi; 29] malayalam; 30] minuscule; 31] minusculeCaroline; 32] minusculeInsular; 33] minusculeVernacular; 34] mkhedruli; 35] muhaqqaq; 36] naipalanagari; 37] naskh; 38] nastaliq; 39] siyaq; 40] notrgir; 41] nuskhuri; 42] oriental; 43] oriya; 44] protogothic; 45] ranjana; 46] rashi; 47] rayhani; 48] riqa; 49] ruqah; 50] sarada; 51] sarada; 52] semitextualis; 53] sephardi; 54] serto; 55] shikastah; 56] sinhala; 57] taliq; 58] tamil; 59] telugu; 60] textualisNorthern; 61] textualisSouthern; 62] thuluth; 63] tughra; 64] uncial; 65] unknown; 66] yemenite</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the particular script or writing style used by this hand, for example secretary, copperplate, Chancery, Italian, etc.</a:documentation>
                <list>
                   <oneOrMore>
                      <choice>
@@ -12959,7 +12958,6 @@ Suggested values include: 1] ajami; 2] ashkenazi; 3] asomtavruli; 4] bengali; 5]
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is unknown</a:documentation>
                         <value>yemenite</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is yemenite</a:documentation>
-                        <data type="Name"/>
                      </choice>
                   </oneOrMore>
                </list>
@@ -18722,8 +18720,7 @@ Suggested values include: 1] codex; 2] roll; 3] sheet; 4] faltbuch; 5] other; 6]
          <ref name="tei_att.global.attributes"/>
          <optional>
             <attribute name="material">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The material composing the majority of the support
-Suggested values include: 1] bamboo; 2] bark; 3] bone; 4] ceramic; 5] clay; 6] enamel; 7] glass; 8] leather; 9] metal; 10] mixed; 11] other; 12] palmLeaf; 13] paper; 14] papyrus; 15] parchment; 16] plaster; 17] shell; 18] textile; 19] unknown</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The material composing the majority of the support</a:documentation>
                <choice>
                   <value>bamboo</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The object is composed of bamboo</a:documentation>
@@ -18764,9 +18761,6 @@ Suggested values include: 1] bamboo; 2] bark; 3] bone; 4] ceramic; 5] clay; 6] e
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The object is textile</a:documentation>
                   <value>unknown</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The material of which is object is composed is not known</a:documentation>
-                  <data type="token">
-                     <param name="pattern">[^\p{C}\p{Z}]+</param>
-                  </data>
                </choice>
             </attribute>
          </optional>
