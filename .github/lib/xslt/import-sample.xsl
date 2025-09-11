@@ -99,8 +99,8 @@
     
     <xsl:template name="cssHook">
         <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css"/>-->
-        <link rel="stylesheet" type="text/css" href="css/prism.css"/>
-        <link rel="stylesheet" type="text/css" href="css/custom.css"/>
+        <link rel="stylesheet" type="text/css" href="/consolidated-schema/documentation/css/prism.css"/>
+        <link rel="stylesheet" type="text/css" href="/consolidated-schema/documentation/css/custom.css"/>
     </xsl:template>
     <xsl:template name="jsForOdds"></xsl:template>
     
