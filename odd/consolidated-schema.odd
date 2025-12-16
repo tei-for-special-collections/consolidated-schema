@@ -4297,6 +4297,9 @@
                                     <valItem ident="kasmiranagari">
                                         <desc>The script of the hand is kasmiranagari</desc>
                                     </valItem>
+                                    <valItem ident="kurrent">
+                                        <desc>The script of the hand is kurrent</desc>
+                                    </valItem>
                                     <valItem ident="maghribi">
                                         <desc>The script of the hand is maghribi</desc>
                                     </valItem>
