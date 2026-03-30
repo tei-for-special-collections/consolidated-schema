@@ -65,6 +65,18 @@
                             </constraint>
                         </constraintSpec>
                     </elementSpec>
+                    
+                    <elementSpec ident="change" module="header" mode="change">
+                        <attList>
+                            <attDef ident="status" usage="opt" mode="change">
+                                <valList type="closed">
+                                    <valItem ident="released">
+                                        <desc>The item is cleared for public release.</desc>
+                                    </valItem>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
                 </schemaSpec>
             </div>
         </body>
