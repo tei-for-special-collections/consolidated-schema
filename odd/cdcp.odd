@@ -67,16 +67,20 @@
                     </elementSpec>
                     
                     <elementSpec ident="change" module="header" mode="change">
-                        <constraintSpec ident="textLang.check1" scheme="schematron">
+                        <constraintSpec ident="date-req-when-released" scheme="schematron">
                             <constraint>
                                 <sch:rule context="tei:change[@status='released']">
                                     <sch:report test="not(@when)">
                                         ERROR: <sch:name/>@when is mandatory when status="released"
                                     </sch:report>
                                 </sch:rule>
+                            </constraint>
+                        </constraintSpec>
+                        <constraintSpec ident="date-when-must-be-iso-date" scheme="schematron">
+                            <constraint>
                                 <sch:rule
                                     context="tei:change[@status='released']">
-                                    <sch:assert test="not(@when castable as xs:date)">
+                                    <sch:assert test="@when castable as xs:date">
                                         ERROR: <sch:name/>@when must be an ISO date (yyyy-mm-dd)
                                     </sch:assert>
                                 </sch:rule>
