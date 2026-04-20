@@ -3969,6 +3969,7 @@
                         <content>
                             <rng:choice>
                                 <rng:ref name="mathml.math"/>
+                                <rng:ref name="model.hiLike"/>
                                 <rng:text/>
                             </rng:choice>
                         </content>
