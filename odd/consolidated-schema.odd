@@ -5065,9 +5065,9 @@
                                 <sch:rule
                                     context="//tei:origDate">
                                     <sch:assert
-                                        test="@calendar and (@when or @notBefore or @notAfter or @from or @to) and string-length(normalize-space(string())) gt 0"
+                                        test="(@when or @notBefore or @notAfter or @from or @to) and string-length(normalize-space(string())) gt 0"
                                         role="error">
-                                        The origDate element must have two or more attributes - calendar and at least one of
+                                        The origDate element must have one or more attributes - at least one of
                                         when, notBefore, notAfter, from and/or to - and must contain some text describing the date.
                                     </sch:assert>
                                 </sch:rule>
