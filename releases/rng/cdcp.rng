@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2026-05-15T08:56:58Z. . 
+Schema generated from ODD source 2026-08-04T11:46:00Z. . 
 TEI Edition:  
 TEI Edition Location: https://www.tei-c.org/Vault/P5// 
   
@@ -3827,7 +3827,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5//
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e124356-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e124494-constraint">
          <rule context="tei:content">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/compatibility/annotations/1.0', 'http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">content descendants must be in the
               namespaces
@@ -3900,7 +3900,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5//
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e125916-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e126054-constraint">
          <rule context="tei:datatype">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">datatype descendants must be in the
               namespaces
@@ -12842,10 +12842,28 @@ Suggested values include: 1] WGS84 (World Geodetic System); 2] MGRS (Military Gr
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is rustic capitals</a:documentation>
                         <value>capitalsSquare</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is square capitals</a:documentation>
+                        <value>coptic</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is coptic</a:documentation>
+                        <value>cuneiform</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is cuneiform</a:documentation>
                         <value>cursiva</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is cursiva (‘cancelleresca’, ‘bastarda’, ‘lettre batarde’, ‘secretary’, etc.)</a:documentation>
                         <value>cursivaAntiquior</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is cursiva antiquior (anglicana, 'Ältere gotische Kursive')</a:documentation>
+                        <value>cursiveAshkenazi</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Ashkenazi cursive</a:documentation>
+                        <value>cursiveByzantine</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Byzantine cursive</a:documentation>
+                        <value>cursiveItalian</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Italian cursive</a:documentation>
+                        <value>cursiveOriental</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Oriental cursive</a:documentation>
+                        <value>cursiveSephardi</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Sephardi cursive</a:documentation>
+                        <value>cursiveYemenite</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Yemenite cursive</a:documentation>
+                        <value>demotic</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is demotic</a:documentation>
                         <value>divani</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is divani</a:documentation>
                         <value>eastSyriac</value>
@@ -12864,6 +12882,8 @@ Suggested values include: 1] WGS84 (World Geodetic System); 2] MGRS (Military Gr
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is gupta</a:documentation>
                         <value>halfUncial</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is half uncial</a:documentation>
+                        <value>hieroglyphic</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is hieroglyphic</a:documentation>
                         <value>humanistica</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is humanistic (unspecified)</a:documentation>
                         <value>humanisticaCursiva</value>
@@ -12926,8 +12946,30 @@ Suggested values include: 1] WGS84 (World Geodetic System); 2] MGRS (Military Gr
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is ruqah</a:documentation>
                         <value>sarada</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is sarada</a:documentation>
-                        <value>sarada</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is sarada</a:documentation>
+                        <value>semiCursiveAshkhenazi</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Ashkenazi semi-cursive</a:documentation>
+                        <value>semiCursiveByzantine</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Byzantine semi-cursive</a:documentation>
+                        <value>semiCursiveItalian</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Italian semi-cursive</a:documentation>
+                        <value>semiCursiveOriental</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Oriental semi-cursive</a:documentation>
+                        <value>semiCursiveSephardi</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Sephardi semi-cursive</a:documentation>
+                        <value>semiCursiveYemenite</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is HebrewYemenite semi-cursive</a:documentation>
+                        <value>semiSquareAshkenazi</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Ashkenazi semi-square</a:documentation>
+                        <value>semiSquareByzantine</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Byzantine semi-square</a:documentation>
+                        <value>semiSquareItalian</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Italian semi-square</a:documentation>
+                        <value>semiSquareOriental</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Oriental semi-square</a:documentation>
+                        <value>semiSquareSephardi</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Sephardi semi-square</a:documentation>
+                        <value>semiSquareYemenite</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Yemenite square</a:documentation>
                         <value>semitextualis</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is semi textualis</a:documentation>
                         <value>sephardi</value>
@@ -12938,6 +12980,18 @@ Suggested values include: 1] WGS84 (World Geodetic System); 2] MGRS (Military Gr
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is shikastah</a:documentation>
                         <value>sinhala</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is sinhala</a:documentation>
+                        <value>squareAshkenazi</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Ashkenazi square</a:documentation>
+                        <value>squareByzantine</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Byzantine square</a:documentation>
+                        <value>squareItalian</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Italian square</a:documentation>
+                        <value>squareOriental</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Oriental square</a:documentation>
+                        <value>squareSephardi</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Sephardi square</a:documentation>
+                        <value>squareYemenite</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is Hebrew Yemenite square</a:documentation>
                         <value>taliq</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The script of the hand is taliq</a:documentation>
                         <value>tamil</value>

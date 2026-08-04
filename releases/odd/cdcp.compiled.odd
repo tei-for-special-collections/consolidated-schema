@@ -19005,12 +19005,39 @@ elements of  <gi>profileDesc</gi> unless these are documenting multiple texts.</
                                     <valItem ident="capitalsSquare">
                                         <desc>The script of the hand is square capitals</desc>
                                     </valItem>
+                                    <valItem ident="coptic">
+                                        <desc>The script of the hand is coptic</desc>
+                                    </valItem>
+                                    <valItem ident="cuneiform">
+                                        <desc>The script of the hand is cuneiform</desc>
+                                    </valItem>
                                     <valItem ident="cursiva">
                                         <desc>The script of the hand is cursiva (‘cancelleresca’, ‘bastarda’, ‘lettre
                                             batarde’, ‘secretary’, etc.)</desc>
                                     </valItem>
                                     <valItem ident="cursivaAntiquior">
                                         <desc>The script of the hand is cursiva antiquior (anglicana, 'Ältere gotische Kursive')</desc>
+                                    </valItem>
+                                    <valItem ident="cursiveAshkenazi">
+                                        <desc>The script of the hand is Hebrew Ashkenazi cursive</desc>
+                                    </valItem>
+                                    <valItem ident="cursiveByzantine">
+                                        <desc>The script of the hand is Hebrew Byzantine cursive</desc>
+                                    </valItem>
+                                    <valItem ident="cursiveItalian">
+                                        <desc>The script of the hand is Hebrew Italian cursive</desc>
+                                    </valItem>
+                                    <valItem ident="cursiveOriental">
+                                        <desc>The script of the hand is Hebrew Oriental cursive</desc>
+                                    </valItem>
+                                    <valItem ident="cursiveSephardi">
+                                        <desc>The script of the hand is Hebrew Sephardi cursive</desc>
+                                    </valItem>
+                                    <valItem ident="cursiveYemenite">
+                                        <desc>The script of the hand is Hebrew Yemenite cursive</desc>
+                                    </valItem>
+                                    <valItem ident="demotic">
+                                        <desc>The script of the hand is demotic</desc>
                                     </valItem>
                                     <valItem ident="divani">
                                         <desc>The script of the hand is divani</desc>
@@ -19039,6 +19066,9 @@ elements of  <gi>profileDesc</gi> unless these are documenting multiple texts.</
                                     </valItem>
                                     <valItem ident="halfUncial">
                                         <desc>The script of the hand is half uncial</desc>
+                                    </valItem>
+                                    <valItem ident="hieroglyphic">
+                                        <desc>The script of the hand is hieroglyphic</desc>
                                     </valItem>
                                     <valItem ident="humanistica">
                                         <desc>The script of the hand is humanistic (unspecified)</desc>
@@ -19134,8 +19164,41 @@ elements of  <gi>profileDesc</gi> unless these are documenting multiple texts.</
                                     <valItem ident="sarada">
                                         <desc>The script of the hand is sarada</desc>
                                     </valItem>
-                                    <valItem ident="sarada">
-                                        <desc>The script of the hand is sarada</desc>
+                                    <valItem ident="semiCursiveAshkhenazi">
+                                        <desc>The script of the hand is Hebrew Ashkenazi semi-cursive</desc>
+                                    </valItem>
+                                    <valItem ident="semiCursiveByzantine">
+                                        <desc>The script of the hand is Hebrew Byzantine semi-cursive</desc>
+                                    </valItem>
+                                    <valItem ident="semiCursiveItalian">
+                                        <desc>The script of the hand is Hebrew Italian semi-cursive</desc>
+                                    </valItem>
+                                    <valItem ident="semiCursiveOriental">
+                                        <desc>The script of the hand is Hebrew Oriental semi-cursive</desc>
+                                    </valItem>
+                                    <valItem ident="semiCursiveSephardi">
+                                        <desc>The script of the hand is Hebrew Sephardi semi-cursive</desc>
+                                    </valItem>
+                                    <valItem ident="semiCursiveYemenite">
+                                        <desc>The script of the hand is HebrewYemenite semi-cursive</desc>
+                                    </valItem>
+                                    <valItem ident="semiSquareAshkenazi">
+                                        <desc>The script of the hand is Hebrew Ashkenazi semi-square</desc>
+                                    </valItem>
+                                    <valItem ident="semiSquareByzantine">
+                                        <desc>The script of the hand is Hebrew Byzantine semi-square</desc>
+                                    </valItem>
+                                    <valItem ident="semiSquareItalian">
+                                        <desc>The script of the hand is Hebrew Italian semi-square</desc>
+                                    </valItem>
+                                    <valItem ident="semiSquareOriental">
+                                        <desc>The script of the hand is Hebrew Oriental semi-square</desc>
+                                    </valItem>
+                                    <valItem ident="semiSquareSephardi">
+                                        <desc>The script of the hand is Hebrew Sephardi semi-square</desc>
+                                    </valItem>
+                                    <valItem ident="semiSquareYemenite">
+                                        <desc>The script of the hand is Hebrew Yemenite square</desc>
                                     </valItem>
                                     <valItem ident="semitextualis">
                                         <desc>The script of the hand is semi textualis</desc>
@@ -19151,6 +19214,24 @@ elements of  <gi>profileDesc</gi> unless these are documenting multiple texts.</
                                     </valItem>
                                     <valItem ident="sinhala">
                                         <desc>The script of the hand is sinhala</desc>
+                                    </valItem>
+                                    <valItem ident="squareAshkenazi">
+                                        <desc>The script of the hand is Hebrew Ashkenazi square</desc>
+                                    </valItem>
+                                    <valItem ident="squareByzantine">
+                                        <desc>The script of the hand is Hebrew Byzantine square</desc>
+                                    </valItem>
+                                    <valItem ident="squareItalian">
+                                        <desc>The script of the hand is Hebrew Italian square</desc>
+                                    </valItem>
+                                    <valItem ident="squareOriental">
+                                        <desc>The script of the hand is Hebrew Oriental square</desc>
+                                    </valItem>
+                                    <valItem ident="squareSephardi">
+                                        <desc>The script of the hand is Hebrew Sephardi square</desc>
+                                    </valItem>
+                                    <valItem ident="squareYemenite">
+                                        <desc>The script of the hand is Hebrew Yemenite square</desc>
                                     </valItem>
                                     <valItem ident="taliq">
                                         <desc>The script of the hand is taliq</desc>
